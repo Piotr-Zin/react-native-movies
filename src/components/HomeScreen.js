@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StatusBar } from 'react-native';
+import { View } from 'react-native';
 import { SearchBar } from 'react-native-elements';
 
 import MovieList from './MovieList';
@@ -9,7 +9,6 @@ export default class HomeScreen extends Component {
     return {
       header: (
         <View>
-          <View style={{ height: StatusBar.currentHeight, backgroundColor: '#2962FF' }} />
           <SearchBar
             ref={searchBar => (this.searchBar = searchBar)}
             round
